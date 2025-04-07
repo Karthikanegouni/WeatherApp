@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 
-const API_KEY = '070021f73a1136f2d7ce79add7bdf63f';
+const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
 const Container = styled.div`
   display: flex;
@@ -78,6 +78,7 @@ function WeatherDetails() {
 
   if (loading) return <Container><Card>Loading...</Card></Container>;
   if (error) return <Container><Card>Error: {error}</Card></Container>;
+
 
   return (
     <Container>

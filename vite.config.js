@@ -5,3 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
 })
+console.log("ENV KEY:", process.env.VITE_WEATHER_API_KEY);
