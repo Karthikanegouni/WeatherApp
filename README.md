@@ -1,12 +1,93 @@
-# React + Vite
+# 🌤️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Weather Dashboard built with **React** and the **OpenWeatherMap API**. This app allows users to search for any city and view real-time weather data in a sleek, dynamic interface.
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the live version here: [WeatherApp on Netlify](https://your-deployed-url.netlify.app)
 
-## Expanding the ESLint configuration
+> *(Replace the link above with your actual deployed site)*
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 🌍 Search weather by city name
+- 🌡️ Displays temperature, weather conditions, humidity, wind speed, and more
+- 🔄 Dynamic routing with React Router (`/weather/:city`)
+- 🎨 Styled with `styled-components` for a modern UI
+- 🧭 Responsive design for all screen sizes
+- 🖼️ Weather icons powered by OpenWeatherMap
+- ⚠️ Error handling for invalid cities or failed API calls
+- ⏳ Loading state while fetching data
+
+---
+
+## 🔧 Tech Stack
+
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Styled-Components](https://styled-components.com/)
+- [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+- [OpenWeatherMap API](https://openweathermap.org/current)
+- [Vite](https://vitejs.dev/) for fast development and build
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/Karthikanegouni/WeatherApp.git
+cd WeatherApp
+npm install
+```
+
+### 🔑 Setup .env
+
+Create a `.env` file in the root folder:
+
+```
+VITE_WEATHER_API_KEY=your_openweather_api_key
+```
+
+### 🚀 Run the App
+
+```bash
+npm run dev
+```
+
+---
+
+## 🛠️ Build for Production
+
+```bash
+npm run build
+```
+
+The production-ready files will be in the `dist/` folder.
+
+---
+
+## 🌐 Deployment
+
+Deployed on **Netlify** with environment variables:
+
+- Go to [Netlify](https://netlify.com)
+- Connect GitHub repo
+- Add `VITE_WEATHER_API_KEY` in Environment Variables
+- Set:
+  - Build command: `npm run build`
+  - Publish directory: `dist`
+
+---
+
+## 📄 License
+
+This project is open-source and free to use under the [MIT License](LICENSE).
+
+---
+
+## 🙌 Acknowledgements
+
+- [OpenWeatherMap](https://openweathermap.org/) for the weather data and icons
+- [Vite](https://vitejs.dev/) for the blazing fast dev server
