@@ -4,9 +4,7 @@ A modern and responsive Weather Dashboard built with **React** and the **OpenWea
 
 ## 🔗 Live Demo
 
-Check out the live version here: [WeatherApp on Netlify](https://your-deployed-url.netlify.app)
-
-> *(Replace the link above with your actual deployed site)*
+Check out the live version here: [WeatherApp on Netlify](https://opencityweatherapp.netlify.app/)
 
 ---
 
